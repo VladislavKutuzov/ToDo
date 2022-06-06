@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+
+                <div class="header__left">
+                    <div class="menu__btn" onclick="sidebar()">
+                        <span class="menu__span"></span>
+                    </div>
+
+                    <a href="" class="header__logo">ToDo: Notes</a>
+                </div>
+
+                <div class="header__right">
+                    <div class="adding"><img src="images/plus-small-free-icon-font.png" alt="" width="25"></div>
+                    <div class="header__btn search"><img class="header__img" src="images/search-free-icon-font.png" alt="" width="20"></div>
+                    <div class="header__btn notification"><img class="header__img" src="images/bell (1).png" alt="" width="20"></div>
+                    <div class="header__btn user"><img src="images/user.png" alt="" width="31"></div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="block">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <ul class="list" >My day
+                <li class="link"><img class="list__img pink" src="images/home.png" alt="" width="20">Home</li>
+                <li class="link"><img class="list__img green" src="images/heart-free-icon-font.png" alt="" width="20" >Favorites</li>
+                <li class="link"><img class="list__img purple" src="images/marker-free-icon-font.png" alt="" width="20" >Meetings</li>
+                <li class="link"><img class="list__img brown" src="images/shopping-bag-free-icon-font.png" alt="" width="20" > Work</li>
+                <li class="link"><img class="list__img yellow" src="images/star-free-icon-font.png" alt="" width="20" > Important</li>
+            </ul>
+        </div>
+
+        <!-- Intro -->
+        <div class="intro">
+            <div class="intro__inner">
+                <h1>My day</h1>
+                <h2>Good morning, <br> Vladislav</h2>
+                <div class="stats">
+                    <div class="stats__btn assignments__btn">Assignments</div>
+                    <div class="stats__btn">Statistics</div>
+                </div>
+
+                <div class="main__block">
+                    <div class="main__header">
+                        <img class="list__img pink" src="images/home.png" alt="" width="20" >Home
+                    </div>
+                    <ul class="main__inner">
+                        <li onclick="onCheckParents(this)"><div class="checkbox pink-br checked"></div> Тask</li>
+                        <li onclick="onCheckParents(this)"><div class="checkbox pink-br"></div> Тask</li>
+                    </ul>
+                    <div class="main__footer">
+                        Go to the collection
+                        <img src="images/arrow-small-right-free-icon-font.png" alt="" width="20px">
+                    </div>
+                </div>
+
+                <div class="main__block">
+                    <div class="main__header">
+                        <img class="list__img green" src="images/heart-free-icon-font.png" alt="" width="20" >Favorites
+                    </div>
+                    <ul class="main__inner">
+                        <li onclick="onCheckParents(this)"><div class="checkbox green-br"></div> Тask</li>
+                        <li onclick="onCheckParents(this)"><div class="checkbox green-br"></div> Тask</li>
+                    </ul>
+                    <div class="main__footer">
+                        Go to the collection
+                        <img src="images/arrow-small-right-free-icon-font.png" alt="" width="20px">
+                    </div>
+                </div>
+
+                <div class="main__block">
+                    <div class="main__header">
+                        <img class="list__img purple" src="images/marker-free-icon-font.png" alt="" width="20" >Meetings
+                    </div>
+                    <ul class="main__inner">
+                        <li onclick="onCheckParents(this)"><div class="checkbox purple-br"></div> Тask</li>
+                        <li onclick="onCheckParents(this)"><div class="checkbox purple-br"></div> Тask</li>
+                    </ul>
+                    <div class="main__footer">
+                        Go to the collection
+                        <img src="images/arrow-small-right-free-icon-font.png" alt="" width="20px">
+                    </div>
+                </div>
+
+                <div class="main__block">
+                    <div class="main__header">
+                        <img class="list__img brown" src="images/shopping-bag-free-icon-font.png" alt="" width="20" > Work
+                    </div>
+                    <ul class="main__inner">
+                        <li onclick="onCheckParents(this)"><div class="checkbox brown-br"></div> Тask</li>
+                        <li onclick="onCheckParents(this)"><div class="checkbox brown-br"></div> Тask</li>
+                    </ul>
+                    <div class="main__footer">
+                        Go to the collection
+                        <img src="images/arrow-small-right-free-icon-font.png" alt="" width="20px">
+                    </div>
+                </div>
+
+                <div class="main__block">
+                    <div class="main__header">
+                        <img class="list__img yellow" src="images/star-free-icon-font.png" alt="" width="20" > Important
+                    </div>
+                    <ul class="main__inner">
+                        <li onclick="onCheckParents(this)"><div class="checkbox yellow-br"></div> Тask</li>
+                        <li onclick="onCheckParents(this)"><div class="checkbox yellow-br"></div> Тask</li>
+                    </ul>
+                    <div class="main__footer">
+                        Go to the collection
+                        <img src="images/arrow-small-right-free-icon-font.png" alt="" width="20px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="add/add.js"></script>
+</body>
+</html>
