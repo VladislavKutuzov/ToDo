@@ -44,9 +44,15 @@ li {
 /* HEADER
 ========================*/
 .header {
+    position: fixed;
+    width: 100%;
     background: #212129;
     border-bottom: 3px solid #0f0f13;
     padding: 5px;
+
+    z-index: 9999;
+
+
 }
 
 .header__inner {
@@ -149,8 +155,11 @@ li {
 .sidebar {
     background: #212129;
     width: 275px;
-    max-height: 100%;
-    position: relative;
+    height: 100%;
+    position: fixed;
+    top: 63px;
+    transition:  width 1s;
+    z-index: 9999;
 }
 
 .sidebar ul {
@@ -208,6 +217,8 @@ li {
 ========================*/
 .intro {
     width: 100%;
+    position: relative;
+    top: 60px;
 }
 
 .intro__inner {
@@ -250,6 +261,7 @@ li {
     background: #21212B;
     border-radius: 20px;
     margin: 20px 0;
+    border: 3px solid transparent;
 }
 
 .main__header {
@@ -284,6 +296,7 @@ li {
     height: 23px;
     border-radius: 10px;
     margin-right: 10px;
+    border-color:#FF93BF ;
 }
 
 .main__footer {
@@ -325,4 +338,53 @@ li {
 
 .checked {
     background: red;
+}
+
+
+/* Block Task
+========================*/
+.block__task {
+    /* display: none; */
+    width: 400px;
+    background: #181820;
+    padding: 30px 65px 20px 30px;
+    border-radius: 10px;
+    position: fixed;
+    margin-left: -230px;
+    left: 50%;
+    top: 200px;
+    border: 3px solid #A8A8B0;
+
+    z-index: 999999;
+}
+
+.block__task input {
+    width: 100%;
+    font-size: 20px;
+    background: #272732;
+    border: 2px solid #272732;
+    color: #fff;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.task-text {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #A8A8B0;
+}
+
+.category {
+
+}
+
+.task__btn {
+    text-align: center;
+    background: #8BCB56;
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 17px;
+    width: 100%;
+    border-radius: 10px;
 }

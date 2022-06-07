@@ -22,15 +22,18 @@
             <div class="header__inner">
 
                 <div class="header__left">
-                    <div class="menu__btn" onclick="sidebar()">
-                        <span class="menu__span"></span>
+                    <div class="menu" onclick="onMenu()">
+                        <div class="menu__btn" >
+                            <span class="menu__span"></span>
+                        </div>
                     </div>
+
 
                     <a href="" class="header__logo">ToDo: Notes</a>
                 </div>
 
                 <div class="header__right">
-                    <div class="adding"><img src="images/plus-small-free-icon-font.png" alt="" width="25"></div>
+                    <div class="adding" onclick="newTask()"><img src="images/plus-small-free-icon-font.png" alt="" width="25"></div>
                     <div class="header__btn search"><img class="header__img" src="images/search-free-icon-font.png" alt="" width="20"></div>
                     <div class="header__btn notification"><img class="header__img" src="images/bell (1).png" alt="" width="20"></div>
                     <div class="header__btn user"><img src="images/user.png" alt="" width="31"></div>
@@ -43,7 +46,7 @@
 
     <div class="block">
         <!-- Sidebar -->
-        <div class="sidebar">
+        <div id="sidebar" class="sidebar">
             <ul class="list" >My day
                 <li class="link"><img class="list__img pink" src="images/home.png" alt="" width="20">Home</li>
                 <li class="link"><img class="list__img green" src="images/heart-free-icon-font.png" alt="" width="20" >Favorites</li>
@@ -54,7 +57,7 @@
         </div>
 
         <!-- Intro -->
-        <div class="intro">
+        <div class="intro" id="intro">
             <div class="intro__inner">
                 <h1>My day</h1>
                 <h2>Good morning, <br> Vladislav</h2>
@@ -63,12 +66,12 @@
                     <div class="stats__btn">Statistics</div>
                 </div>
 
-                <div class="main__block">
+                <div class="main__block pink-br">
                     <div class="main__header">
                         <img class="list__img pink" src="images/home.png" alt="" width="20" >Home
                     </div>
                     <ul class="main__inner">
-                        <li onclick="onCheckParents(this)"><div class="checkbox pink-br checked"></div> Тask</li>
+                        <li class="link" onclick="onCheckParents(this)"><div class="checkbox pink-br checked"></div> Тask</li>
                         <li onclick="onCheckParents(this)"><div class="checkbox pink-br"></div> Тask</li>
                     </ul>
                     <div class="main__footer">
@@ -77,7 +80,7 @@
                     </div>
                 </div>
 
-                <div class="main__block">
+                <div class="main__block green-br">
                     <div class="main__header">
                         <img class="list__img green" src="images/heart-free-icon-font.png" alt="" width="20" >Favorites
                     </div>
@@ -91,7 +94,7 @@
                     </div>
                 </div>
 
-                <div class="main__block">
+                <div class="main__block purple-br">
                     <div class="main__header">
                         <img class="list__img purple" src="images/marker-free-icon-font.png" alt="" width="20" >Meetings
                     </div>
@@ -105,7 +108,7 @@
                     </div>
                 </div>
 
-                <div class="main__block">
+                <div class="main__block brown-br">
                     <div class="main__header">
                         <img class="list__img brown" src="images/shopping-bag-free-icon-font.png" alt="" width="20" > Work
                     </div>
@@ -119,7 +122,7 @@
                     </div>
                 </div>
 
-                <div class="main__block">
+                <div class="main__block yellow-br">
                     <div class="main__header">
                         <img class="list__img yellow" src="images/star-free-icon-font.png" alt="" width="20" > Important
                     </div>
@@ -134,6 +137,22 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- Block Task -->
+    <div class="block__task">
+        <div class="task-text">Task name</div>
+        <input type="text">
+        <div class="category">
+            <img class="list__img pink" src="images/home.png" alt="" width="20">
+            <img class="list__img green" src="images/heart-free-icon-font.png" alt="" width="20" >
+            <img class="list__img purple" src="images/marker-free-icon-font.png" alt="" width="20" >
+            <img class="list__img brown" src="images/shopping-bag-free-icon-font.png" alt="" width="20" >
+            <img class="list__img yellow" src="images/star-free-icon-font.png" alt="" width="20" >
+        </div>
+        <div class="task-text">Due date</div>
+        <input type="date" name="" id="">
+        <div class="task__btn">Create</div>
     </div>
 
 
