@@ -23,7 +23,7 @@
 
                 <div class="header__left">
                     <div class="menu" onclick="onMenu()">
-                        <div class="menu__btn" >
+                        <div class="menu__btn menu__transform" >
                             <span class="menu__span"></span>
                         </div>
                     </div>
@@ -152,7 +152,11 @@
         </div>
         <div class="task-text">Due date</div>
         <input type="date" name="" id="">
-        <div class="task__btn">Create</div>
+        <div class="main__btn">
+            <div class="task__btn cancel" onclick="newTask()">Cancel</div>
+            <div class="task__btn">Create</div>
+
+        </div>
     </div>
 
 

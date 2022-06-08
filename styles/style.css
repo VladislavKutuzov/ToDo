@@ -68,6 +68,9 @@ li {
 .header__right {
     display: flex;
 }
+.menu {
+    cursor: pointer;
+}
 
 .menu__btn {
     position: relative;
@@ -76,6 +79,13 @@ li {
     top: 8px;
     margin: 15px 10px;
     display: block;
+
+}
+
+.menu__transform {
+    transform: rotate(90deg);
+    top: 0px;
+    left: -7px;
 
 }
 
@@ -344,10 +354,10 @@ li {
 /* Block Task
 ========================*/
 .block__task {
-    /* display: none; */
+    display: none;
     width: 400px;
     background: #181820;
-    padding: 30px 65px 20px 30px;
+    padding: 30px 30px 30px 30px;
     border-radius: 10px;
     position: fixed;
     margin-left: -230px;
@@ -359,7 +369,7 @@ li {
 }
 
 .block__task input {
-    width: 100%;
+    width: 365px;
     font-size: 20px;
     background: #272732;
     border: 2px solid #272732;
@@ -379,12 +389,34 @@ li {
 
 }
 
+.main__btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
 .task__btn {
     text-align: center;
-    background: #8BCB56;
     font-size: 20px;
+    background: #64933e;
     color: #fff;
     padding: 10px 17px;
-    width: 100%;
+    width: 150px;
     border-radius: 10px;
+    cursor: pointer;
+}
+
+.task__btn:hover {
+    background: #4fb000;
+
+}
+
+.cancel {
+    background: rgb(104, 5, 5);
+    margin-right: 0px;
+}
+
+.cancel:hover {
+    background: rgb(224, 17, 17);
 }
