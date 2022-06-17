@@ -71,8 +71,7 @@
                         <img class="list__img pink" src="images/home.png" alt="" width="20" >Home
                     </div>
                     <ul class="main__inner">
-                        <li class="link" onclick="onCheckParents(this)"><div class="checkbox pink-br checked"></div> Тask</li>
-                        <li onclick="onCheckParents(this)"><div class="checkbox pink-br"></div> Тask</li>
+
                     </ul>
                     <div class="main__footer">
                         Go to the collection
@@ -80,7 +79,7 @@
                     </div>
                 </div>
 
-                <div class="main__block green-br">
+                <!-- <div class="main__block green-br">
                     <div class="main__header">
                         <img class="list__img green" src="images/heart-free-icon-font.png" alt="" width="20" >Favorites
                     </div>
@@ -134,7 +133,7 @@
                         Go to the collection
                         <img src="images/arrow-small-right-free-icon-font.png" alt="" width="20px">
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -142,7 +141,7 @@
     <!-- Block Task -->
     <div class="block__task">
         <div class="task-text">Task name</div>
-        <input type="text">
+        <input class="add-todo" type="text">
         <div class="category">
             <img class="list__img pink" src="images/home.png" alt="" width="20">
             <img class="list__img green" src="images/heart-free-icon-font.png" alt="" width="20" >
@@ -154,16 +153,12 @@
         <input type="date" name="" id="">
         <div class="main__btn">
             <div class="task__btn cancel" onclick="newTask()">Cancel</div>
-            <div class="task__btn">Create</div>
+            <div class="task__btn btn-add" onclick="newTask()">Create</div>
 
         </div>
     </div>
 
-
-
-
-
-
+    <script src="add/functional.js"></script>
     <script src="add/add.js"></script>
 </body>
 </html>

@@ -1,19 +1,3 @@
-// для задач
-function onCheckParents(e) {
-    const checkbox = e.getElementsByClassName("checkbox")[0];
-    if (isChecked(checkbox)) {
-        checkbox.classList.remove("checked");
-    } else {
-        checkbox.classList.add("checked");
-    }
-}
-
-function isChecked(element) {
-    var rx = new RegExp('(?:^| )' + "checked" + '(?: |$)');
-    return rx.test(element.className);
-}
-
-
 // меню бургер
 let bool = true;
 let sidebar = document.getElementById('sidebar');
@@ -39,18 +23,20 @@ function onMenu() {
 }
 
 // создание блока задач
-let plus = true;
+let plus = false;
 
 function newTask() {
     let newTask = document.querySelector('.block__task');
     let header = document.querySelector('.header');
     let sidebar = document.querySelector('.sidebar');
     let intro = document.querySelector('.intro');
+    const adding = document.querySelector('.adding');
 
 
 
     if (plus) {
         newTask.style.display = 'none';
+        adding.style.pointerEvents = 'auto';
         header.style.filter = 'blur(0px)';
         sidebar.style.filter = 'blur(0px)';
         intro.style.filter = 'blur(0px)';
@@ -58,6 +44,7 @@ function newTask() {
 
     } else {
         newTask.style.display = 'block';
+        adding.style.pointerEvents = 'none';
         header.style.filter = 'blur(20px)';
         sidebar.style.filter = 'blur(20px)';
         intro.style.filter = 'blur(20px)';

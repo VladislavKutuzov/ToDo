@@ -301,9 +301,10 @@ li {
 }
 
 .checkbox {
+    display: block;
     border: 3px solid #FF93BF;
-    width: 23px;
-    height: 23px;
+    width: 30px;
+    height: 30px;
     border-radius: 10px;
     margin-right: 10px;
     border-color:#FF93BF ;
