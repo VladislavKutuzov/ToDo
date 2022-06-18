@@ -172,6 +172,11 @@ li {
     z-index: 9999;
 }
 
+.remove__menu {
+    width: 0;
+    display: none;
+}
+
 .sidebar ul {
     font-size: 20px;
     color: #a8a8b0;
@@ -355,18 +360,23 @@ li {
 /* Block Task
 ========================*/
 .block__task {
-    display: none;
+    display: block;
     width: 400px;
     background: #181820;
     padding: 30px 30px 30px 30px;
     border-radius: 10px;
-    position: fixed;
+    position: absolute;
     margin-left: -230px;
     left: 50%;
     top: 200px;
     border: 3px solid #A8A8B0;
+    backdrop-filter: blur(20px);
+    z-index: 9999999;
+}
 
-    z-index: 999999;
+.remove__block {
+    display: block;
+
 }
 
 .block__task input {

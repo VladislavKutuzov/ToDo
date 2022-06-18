@@ -1,5 +1,5 @@
 const todosNode = document.querySelector('.main__inner');
-const inputNode = document.querySelector('.add-todo');
+let inputNode = document.querySelector('.add-todo');
 const btnNode = document.querySelector('.btn-add');
 const todos = [];
 
@@ -51,6 +51,9 @@ btnNode.addEventListener('click', () => {   // Обработчик создан
     addTodo(text);
 
     render();
+
+    inputNode.value = '';
+
 });
 
 todosNode.addEventListener('click', (event) => {   // Обработчик удаления задачи
